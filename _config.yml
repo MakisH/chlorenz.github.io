@@ -56,3 +56,7 @@ collections:
   posts:
     permalink: /blog/:year/:month/:day/:title/
     output: true
+
+# Configure the remote_theme plugin with the gh-pages branch
+# or the specific tag
+remote_theme: aksakalli/jekyll-doc-theme@gh-pages
