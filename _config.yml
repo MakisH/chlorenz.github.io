@@ -2,18 +2,17 @@
 title: Jekyll Doc Theme
 email: your-email@domain.com
 description: >
-  Jekyll Template for Project Websites
-  providing documentation and blog post pages.
-lang: en-US
+  Testing the Jekyll Doc Theme.
+lang: en-GB
 
-baseurl: "/jekyll-doc-theme" # the subpath of your site, e.g. /blog/
-url: https://aksakalli.github.io/jekyll-doc-theme # the base hostname & protocol for your site
-git_address: https://github.com/aksakalli/jekyll-doc-theme
-git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: https://chlorenz.github.io # the base hostname & protocol for your site
+git_address: https://github.com/chlorenz/chlorenz.github.io.git
+git_edit_address: https://github.com/chlorenz/chlorenz.github.io.git/blob/master
 
 # theme options from https://bootswatch.com/3/
 # comment out this to use default Bootstrap
-bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+bootwatch: yeti # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
 
 # Build settings
 markdown: kramdown
@@ -24,6 +23,10 @@ plugins:
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-gist
+
+whitelist:
+  - jekyll-redirect-from
 
 exclude:
   - Gemfile
@@ -31,7 +34,9 @@ exclude:
   - .idea/
   - .gitignore
   - README.md
+
 timezone: Europe/Berlin
+
 defaults:
 - scope:
     path: _posts
@@ -39,7 +44,6 @@ defaults:
   values:
     layout: post
     sectionid: blog
-
 - scope:
     path: _docs
     type: docs
@@ -57,6 +61,5 @@ collections:
     permalink: /blog/:year/:month/:day/:title/
     output: true
 
-# Configure the remote_theme plugin with the gh-pages branch
-# or the specific tag
-remote_theme: aksakalli/jekyll-doc-theme@gh-pages
+# Google Analytics
+#google_analytics: XX-XXX-X
