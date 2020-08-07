@@ -1,0 +1,41 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+  product: Test Docs
+  version: 1.0
+  folders:
+
+  - title: Topic 1
+    output: web, pdf
+    folderitems:
+
+    - title: Page 1
+      url: /topic_1_page_1.html
+      output: web, pdf
+      type: homepage
+
+    - title: Page 2
+      url: /topic_1_page_2.html
+      output: web, pdf
+
+    - title: Page 3
+      url: /topic_1_page_3.html
+      output: web, pdf
+
+  - title: Topic 2
+    output: web, pdf
+    folderitems:
+
+    - title: Page 1
+      url: /topic_2_page_1.html
+      output: web, pdf
+      type: homepage
+
+    - title: Page 2
+      url: /topic_2_page_2.html
+      output: web, pdf
+
+    - title: Page 3
+      url: /topic_2_page_3.html
+      output: web, pdf

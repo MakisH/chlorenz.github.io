@@ -13,7 +13,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <!-- toggle sidebar button -->
+                {% comment %}
                 <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                {% endcomment %}
                 <!-- entries without drop-downs appear here -->
 
 {% assign topnav = site.data[page.topnav] %}
@@ -51,7 +53,9 @@
                 {% endfor %}
                 {% endfor %}
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
-			{% include feedback.html %}
+			{% comment %}
+            {% include feedback.html %}
+            {% endcomment %}
 		{% endif %}
                 <!--comment out this block if you want to hide search-->
                 <li>
@@ -74,6 +78,7 @@
                     </script>
                     <!--end search-->
                 </li>
+                <li><a href="http://github.com/chlorenz/chlorenz.github.io" target="_blank" rel="noopener">Github</a></li>
             </ul>
         </div>
         </div>
