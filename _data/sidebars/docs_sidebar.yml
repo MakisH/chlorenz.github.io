@@ -6,6 +6,20 @@ entries:
   version: 1.0
   folders:
 
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
   - title: Topic 1
     output: web, pdf
     folderitems:
