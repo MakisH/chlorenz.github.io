@@ -9,9 +9,30 @@ topnav:
       url: /docs
     - title: Tutorials
       url: /tutorials
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Topnav dropdowns
+  folders:
     - title: Community
-      external_url: http://www.google.com
+      folderitems:
+        - title: Contributors
+          url: /test.html
+        - title: Contribute
+          url: /test.html
+        - title: Testimonials
+          url: /test.html
+        - title: Publications
+          url: /test.html
+        - title: Channels
+          url: /test.html
+        - title: Events
+          url: /test.html
+
+topnav2:
+- title: Topnav2
+  items:
     - title: Blog
-      url: /posts
+      external_url: https://precice.discourse.group/
     - title: About
       url: /about

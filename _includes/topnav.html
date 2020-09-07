@@ -20,6 +20,7 @@
 
 {% assign topnav = site.data[page.topnav] %}
 {% assign topnav_dropdowns = site.data[page.topnav].topnav_dropdowns %}
+{% assign topnav2 = site.data[page.topnav].topnav2 %}
 
                 {% for entry in topnav.topnav %}
                 {% for item in entry.items %}
@@ -52,11 +53,25 @@
                 </li>
                 {% endfor %}
                 {% endfor %}
+
+                {% for entry in topnav2 %}
+                {% for item in entry.items %}
+                {% if item.external_url %}
+                <li><a href="{{item.external_url}}" target="_blank" rel="noopener">{{item.title}}</a></li>
+                {% elsif page.url contains item.url %}
+                <li class="active"><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                {% else %}
+                <li><a href="{{item.url | remove: "/"}}">{{item.title}}</a></li>
+                {% endif %}
+                {% endfor %}
+                {% endfor %}
+
+
                 {% if site.feedback_disable == null or site.feedback_disable == false %}
-			{% comment %}
-            {% include feedback.html %}
-            {% endcomment %}
-		{% endif %}
+        			{% comment %}
+                    {% include feedback.html %}
+                    {% endcomment %}
+		        {% endif %}
                 <!--comment out this block if you want to hide search-->
                 <li>
                     <!--start search-->

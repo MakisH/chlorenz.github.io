@@ -20,36 +20,126 @@ entries:
       output: pdf
       type: frontmatter
 
-  - title: Topic 1
+  - title: Installation
     output: web, pdf
     folderitems:
 
-    - title: Page 1
+    - title: Overview
       url: /topic_1_page_1.html
       output: web, pdf
       type: homepage
 
-    - title: Page 2
-      url: /topic_1_page_2.html
+    - title: Buidling from source
+      url: /topic_1_page_1.html
       output: web, pdf
 
-    - title: Page 3
-      url: /topic_1_page_3.html
+    - title: Linking to preCICE
+      url: /topic_1_page_1.html
       output: web, pdf
 
-  - title: Topic 2
+    - title: Language bindings
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Configuration
     output: web, pdf
     folderitems:
 
-    - title: Page 1
-      url: /topic_2_page_1.html
+    - title: Actions
+      url: /configurations_actions.html
       output: web, pdf
       type: homepage
 
-    - title: Page 2
-      url: /topic_2_page_2.html
+    - title: Page 1
+      url: /topic_1_page_1.html
       output: web, pdf
 
-    - title: Page 3
-      url: /topic_2_page_3.html
+    - title: Page 2
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Tooling
+    output: web, pdf
+    folderitems:
+
+    - title: Output files
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+    - title: XML visualisation
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+    - title: etc
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Provided adapters
+    output: web, pdf
+    folderitems:
+
+    - title: Overview
+      url: /topic_1_page_1.html
+      output: web, pdf
+      type: homepage
+
+      subfolders:
+      - title: OpenFOAM
+        output: web, pdf
+        subfolderitems:
+
+        - title: OpenFOAM 1
+          url: /topic_1_page_1.html
+          output: web, pdf
+
+        - title: OpenFOAM 2
+          url: /topic_1_page_1.html
+          output: web, pdf
+
+    - title: CalculiX
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+    - title: Code_Aster
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Couple your code
+    output: web, pdf
+    folderitems:
+
+    - title: Couple your code
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Numerical methods
+    output: web, pdf
+    folderitems:
+
+    - title: Numerical methods
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Troubleshooting
+    output: web, pdf
+    folderitems:
+
+    - title: Troubleshooting
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Literature guide
+    output: web, pdf
+    folderitems:
+
+    - title: Literature guide
+      url: /topic_1_page_1.html
+      output: web, pdf
+
+  - title: Dev docs
+    output: web, pdf
+    folderitems:
+
+    - title: Dev docs
+      url: /topic_1_page_1.html
       output: web, pdf
